@@ -1,0 +1,6 @@
+framework module Pods_ScaledVisibleCellsCollectionView_Example {
+  umbrella header "Pods-ScaledVisibleCellsCollectionView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
