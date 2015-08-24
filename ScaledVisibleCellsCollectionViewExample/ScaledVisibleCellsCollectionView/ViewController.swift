@@ -11,7 +11,7 @@ import ScaledVisibleCellsCollectionView
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var collectionView: ScaledVisibleCellsCollectionView!
+    @IBOutlet weak var collectionView: UICollectionView!
     private let cellIdentifier = "CollectionCell"
     
     override func viewDidLoad() {

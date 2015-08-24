@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5EC2994E1052B76041F876E8"
+               BlueprintIdentifier = "B343BB04441E46A1BA017D1A"
                BuildableName = "Pods_ScaledVisibleCellsCollectionView_Tests.framework"
                BlueprintName = "Pods-ScaledVisibleCellsCollectionView_Tests"
                ReferencedContainer = "container:Pods.xcodeproj">

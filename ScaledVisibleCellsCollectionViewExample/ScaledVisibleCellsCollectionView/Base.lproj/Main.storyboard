@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fOP-Ts-Apf" customClass="ScaledVisibleCellsCollectionView" customModule="ScaledVisibleCellsCollectionView">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fOP-Ts-Apf">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8Os-xO-8eC">
                                     <size key="itemSize" width="300" height="300"/>
@@ -47,7 +47,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="collectionView" destination="fOP-Ts-Apf" id="iTO-M3-hVt"/>
+                        <outlet property="collectionView" destination="fOP-Ts-Apf" id="7Pz-ak-Qt0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

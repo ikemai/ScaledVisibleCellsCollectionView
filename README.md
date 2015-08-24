@@ -5,8 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/ScaledVisibleCellsCollectionView.svg?style=flat)](http://cocoapods.org/pods/ScaledVisibleCellsCollectionView)
 [![Platform](https://img.shields.io/cocoapods/p/ScaledVisibleCellsCollectionView.svg?style=flat)](http://cocoapods.org/pods/ScaledVisibleCellsCollectionView)
 
-ScaledVisibleCellsCollectionView is check visible cells position.
-And setting cell's scale and alpha.
+ScaledVisibleCellsCollectionView is UICollectionView extension. 
+ScaledVisibleCellsCollectionView is Check visible cells position. And setting cell's scale and alpha.
 
 ## Demo
 
@@ -39,16 +39,17 @@ Note: the `use_frameworks!` is required for pods made in Swift.
 * Set propertis
 
 ```swift
-let collectionView = ScaledVisibleCellsCollectionView(frame: view.bounds)
-collectionView.setScaledDesginParam(scaledPattern: .VerticalCenter, maxScale: 1.2, minScale: 0.5, maxAlpha: 1.0, minAlpha: 0.5)
+let collectionView = UICollectionView(frame: view.bounds)
 view.addSubview(collectionView)
+
+collectionView.setScaledDesginParam(scaledPattern: .VerticalCenter, maxScale: 1.2, minScale: 0.5, maxAlpha: 1.0, minAlpha: 0.5)
 ```
 
-* Set scale
+* Scale and alpha
 
 ```swift
 func scrollViewDidScroll(scrollView: UIScrollView) {
-collectionView.scaledVisibleCells()
+	collectionView.scaledVisibleCells()
 }
 ```
 
@@ -58,7 +59,7 @@ collectionView.scaledVisibleCells()
 * Set Scroll direction & position is the most large cell
 
 ```swift
-private var scaledPattern: SC_ScaledPattern = .VerticalCenter
+var scaledPattern: SC_ScaledPattern = .VerticalCenter
 ```
 
 ```swift
@@ -75,15 +76,15 @@ case VerticalTop
 * Set Scale
 
 ```Swift
-private var maxScale: CGFloat = 1.0
-private var minScale: CGFloat = 0.5
+var maxScale: CGFloat = 1.0
+var minScale: CGFloat = 0.5
 ```
 
 * Set Alpha
 
 ```Swift
-private var maxAlpha: CGFloat = 1.0
-private var minAlpha: CGFloat = 0.5
+var maxAlpha: CGFloat = 1.0
+var minAlpha: CGFloat = 0.5
 ```
 
 
@@ -93,6 +94,16 @@ private var minAlpha: CGFloat = 0.5
 
 ```swift
 func setScaledDesginParam(scaledPattern pattern: SC_ScaledPattern, maxScale: CGFloat, minScale: CGFloat, maxAlpha: CGFloat, minAlpha: CGFloat)
+```
+
+or 
+
+```swift
+ScaledVisibleCellsCollectionView.sharedInstance.scaledPattern = .HorizontalCenter
+ScaledVisibleCellsCollectionView.sharedInstance.maxScale = 1.0
+ScaledVisibleCellsCollectionView.sharedInstance.minScale = 0.5
+ScaledVisibleCellsCollectionView.sharedInstance.maxAlpha = 1.0
+ScaledVisibleCellsCollectionView.sharedInstance.minAlpha = 0.5
 ```
 
 * Set scale for visible cells ( * Please call at any time )

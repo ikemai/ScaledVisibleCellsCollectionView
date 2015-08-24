@@ -17,31 +17,36 @@ public enum SC_ScaledPattern {
     case VerticalTop
 }
 
-public class ScaledVisibleCellsCollectionView: UICollectionView {
-    private var maxScale: CGFloat = 1.0
-    private var minScale: CGFloat = 0.5
+public class ScaledVisibleCellsCollectionView {
+    static let sharedInstance = ScaledVisibleCellsCollectionView()
     
-    private var maxAlpha: CGFloat = 1.0
-    private var minAlpha: CGFloat = 0.5
+    var maxScale: CGFloat = 1.0
+    var minScale: CGFloat = 0.5
     
-    private var scaledPattern: SC_ScaledPattern = .VerticalCenter
+    var maxAlpha: CGFloat = 1.0
+    var minAlpha: CGFloat = 0.5
+    
+    var scaledPattern: SC_ScaledPattern = .VerticalCenter
+}
+
+extension UICollectionView {
     
     /**
     Please always set
     */
     public func setScaledDesginParam(scaledPattern pattern: SC_ScaledPattern, maxScale: CGFloat, minScale: CGFloat, maxAlpha: CGFloat, minAlpha: CGFloat) {
-        scaledPattern = pattern
-        self.maxScale = maxScale
-        self.minScale = minScale
-        self.maxAlpha = maxAlpha
-        self.minAlpha = minAlpha
+        ScaledVisibleCellsCollectionView.sharedInstance.scaledPattern = pattern
+        ScaledVisibleCellsCollectionView.sharedInstance.maxScale = maxScale
+        ScaledVisibleCellsCollectionView.sharedInstance.minScale = minScale
+        ScaledVisibleCellsCollectionView.sharedInstance.maxAlpha = maxAlpha
+        ScaledVisibleCellsCollectionView.sharedInstance.minAlpha = minAlpha
     }
     
     /**
     Please call at any time
     */
     public func scaledVisibleCells() {
-        switch scaledPattern {
+        switch ScaledVisibleCellsCollectionView.sharedInstance.scaledPattern {
         case .HorizontalCenter, .HorizontalLeft, .HorizontalRight:
             scaleCellsForHorizontalScroll(visibleCells() as! [UICollectionViewCell])
             break
@@ -52,7 +57,7 @@ public class ScaledVisibleCellsCollectionView: UICollectionView {
     }
 }
 
-extension ScaledVisibleCellsCollectionView {
+extension UICollectionView {
     
     private func scaleCellsForHorizontalScroll(visibleCells: [UICollectionViewCell]) {
         
@@ -62,7 +67,7 @@ extension ScaledVisibleCellsCollectionView {
         for cell in visibleCells  {
             var distanceFromMainPosition: CGFloat = 0
             
-            switch scaledPattern {
+            switch ScaledVisibleCellsCollectionView.sharedInstance.scaledPattern {
             case .HorizontalCenter:
                 distanceFromMainPosition = horizontalCenter(cell)
                 break
@@ -91,7 +96,7 @@ extension ScaledVisibleCellsCollectionView {
         for cell in visibleCells {
             var distanceFromMainPosition: CGFloat = 0
             
-            switch scaledPattern {
+            switch ScaledVisibleCellsCollectionView.sharedInstance.scaledPattern {
             case .VerticalCenter:
                 distanceFromMainPosition = verticalCenter(cell)
                 break
@@ -117,6 +122,11 @@ extension ScaledVisibleCellsCollectionView {
         var preferredScale: CGFloat = 0.0
         var preferredAlpha: CGFloat = 0.0
         
+        let maxScale = ScaledVisibleCellsCollectionView.sharedInstance.maxScale
+        let minScale = ScaledVisibleCellsCollectionView.sharedInstance.minScale
+        let maxAlpha = ScaledVisibleCellsCollectionView.sharedInstance.maxAlpha
+        let minAlpha = ScaledVisibleCellsCollectionView.sharedInstance.minAlpha
+        
         if distanceFromMainPosition < maximumScalingArea {
             // cell in maximum-scaling area
             preferredScale = maxScale
@@ -137,7 +147,7 @@ extension ScaledVisibleCellsCollectionView {
     }
 }
 
-extension ScaledVisibleCellsCollectionView {
+extension UICollectionView {
     
     private func horizontalCenter(cell: UICollectionViewCell)-> CGFloat {
         return abs(bounds.width / 2 - (cell.frame.midX - contentOffset.x))
