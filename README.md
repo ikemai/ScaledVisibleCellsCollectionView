@@ -96,16 +96,6 @@ var minAlpha: CGFloat = 0.5
 func setScaledDesginParam(scaledPattern pattern: SC_ScaledPattern, maxScale: CGFloat, minScale: CGFloat, maxAlpha: CGFloat, minAlpha: CGFloat)
 ```
 
-or 
-
-```swift
-ScaledVisibleCellsCollectionView.sharedInstance.scaledPattern = .HorizontalCenter
-ScaledVisibleCellsCollectionView.sharedInstance.maxScale = 1.0
-ScaledVisibleCellsCollectionView.sharedInstance.minScale = 0.5
-ScaledVisibleCellsCollectionView.sharedInstance.maxAlpha = 1.0
-ScaledVisibleCellsCollectionView.sharedInstance.minAlpha = 0.5
-```
-
 * Set scale for visible cells ( * Please call at any time )
 
 ```swift
