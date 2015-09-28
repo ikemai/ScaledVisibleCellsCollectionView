@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D40B464E43438A2C1368D17F"
-               BuildableName = "Pods_ScaledVisibleCellsCollectionView_Example.framework"
-               BlueprintName = "Pods-ScaledVisibleCellsCollectionView_Example"
+               BlueprintIdentifier = "9DF610C5B9D7993A69B71F1C"
+               BuildableName = "ScaledVisibleCellsCollectionView.framework"
+               BlueprintName = "ScaledVisibleCellsCollectionView"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

@@ -161,6 +161,8 @@
 		808743A71B88BDA2000B0B16 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = mai_ikeda;
 				TargetAttributes = {

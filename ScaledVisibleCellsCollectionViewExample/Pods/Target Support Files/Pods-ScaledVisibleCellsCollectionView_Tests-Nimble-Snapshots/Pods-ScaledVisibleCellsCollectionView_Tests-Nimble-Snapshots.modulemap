@@ -1,6 +1,0 @@
-framework module Nimble_Snapshots {
-  umbrella header "Pods-ScaledVisibleCellsCollectionView_Tests-Nimble-Snapshots-umbrella.h"
-
-  export *
-  module * { export * }
-}

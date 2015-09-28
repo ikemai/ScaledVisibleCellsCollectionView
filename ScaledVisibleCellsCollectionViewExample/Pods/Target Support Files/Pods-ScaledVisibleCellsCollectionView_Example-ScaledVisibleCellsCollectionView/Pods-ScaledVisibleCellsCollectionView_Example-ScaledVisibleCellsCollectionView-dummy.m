@@ -1,5 +1,0 @@
-#import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_ScaledVisibleCellsCollectionView_Example_ScaledVisibleCellsCollectionView : NSObject
-@end
-@implementation PodsDummy_Pods_ScaledVisibleCellsCollectionView_Example_ScaledVisibleCellsCollectionView
-@end

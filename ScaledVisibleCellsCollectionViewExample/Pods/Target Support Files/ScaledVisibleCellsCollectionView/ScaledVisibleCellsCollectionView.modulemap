@@ -1,0 +1,6 @@
+framework module ScaledVisibleCellsCollectionView {
+  umbrella header "ScaledVisibleCellsCollectionView-umbrella.h"
+
+  export *
+  module * { export * }
+}

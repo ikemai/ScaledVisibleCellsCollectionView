@@ -48,10 +48,10 @@ extension UICollectionView {
     public func scaledVisibleCells() {
         switch ScaledVisibleCellsCollectionView.sharedInstance.scaledPattern {
         case .HorizontalCenter, .HorizontalLeft, .HorizontalRight:
-            scaleCellsForHorizontalScroll(visibleCells() as! [UICollectionViewCell])
+            scaleCellsForHorizontalScroll(visibleCells())
             break
         case .VerticalCenter, .VerticalTop, .VerticalBottom:
-            self.scaleCellsForVerticalScroll(visibleCells() as! [UICollectionViewCell])
+            self.scaleCellsForVerticalScroll(visibleCells())
             break
         }
     }

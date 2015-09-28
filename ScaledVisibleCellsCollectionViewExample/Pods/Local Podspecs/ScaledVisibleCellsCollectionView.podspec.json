@@ -1,6 +1,6 @@
 {
   "name": "ScaledVisibleCellsCollectionView",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "summary": "TapGestureGenerater is get tap and gesture event.",
   "homepage": "https://github.com/ikemai/ScaledVisibleCellsCollectionView",
   "license": {
@@ -15,7 +15,7 @@
   },
   "source": {
     "git": "https://github.com/ikemai/ScaledVisibleCellsCollectionView.git",
-    "tag": "0.1.0"
+    "tag": "0.2.0"
   },
   "source_files": "ScaledVisibleCellsCollectionView/**/*.{h,swift}",
   "requires_arc": true,

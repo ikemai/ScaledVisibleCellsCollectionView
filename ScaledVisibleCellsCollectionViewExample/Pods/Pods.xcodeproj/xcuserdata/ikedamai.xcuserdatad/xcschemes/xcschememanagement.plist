@@ -4,37 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-ScaledVisibleCellsCollectionView_Example-ScaledVisibleCellsCollectionView.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-ScaledVisibleCellsCollectionView_Example.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-ScaledVisibleCellsCollectionView_Tests-FBSnapshotTestCase.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-ScaledVisibleCellsCollectionView_Tests-Nimble-Snapshots.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-ScaledVisibleCellsCollectionView_Tests-Nimble.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-ScaledVisibleCellsCollectionView_Tests-Quick.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-ScaledVisibleCellsCollectionView_Tests-ScaledVisibleCellsCollectionView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -44,45 +14,25 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ScaledVisibleCellsCollectionView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>38B3633CA8F085794115CC9F</key>
+		<key>26A3DB15CB154E70CE261AD2F93B684E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>54D4407CF99131BEB78C8769</key>
+		<key>71627CC5EA3D51972A1B6E5FB6E79982</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7DB88AD11A442C8E5525CF88</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>81F43FAAA40568AAD67731B8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>99F29A3D0A9394427061A57D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A8C0FA1ABC4436BCA78BC768</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B343BB04441E46A1BA017D1A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FD9857CEBDC3B49E7CADCE52</key>
+		<key>A453FBB5EB73355AB1C979A90D7C9353</key>
 		<dict>
 			<key>primary</key>
 			<true/>

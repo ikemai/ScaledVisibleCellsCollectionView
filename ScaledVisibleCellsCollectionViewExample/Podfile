@@ -7,9 +7,4 @@ end
 
 target 'ScaledVisibleCellsCollectionView_Tests', :exclusive => true do
   pod "ScaledVisibleCellsCollectionView", :path => "../"
-
-  pod 'Quick', '~> 0.3.1'
-  pod 'Nimble'
-  pod 'FBSnapshotTestCase'
-  pod 'Nimble-Snapshots'
 end
