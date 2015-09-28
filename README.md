@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/ScaledVisibleCellsCollectionView.svg?style=flat)](http://cocoapods.org/pods/ScaledVisibleCellsCollectionView)
 [![Platform](https://img.shields.io/cocoapods/p/ScaledVisibleCellsCollectionView.svg?style=flat)](http://cocoapods.org/pods/ScaledVisibleCellsCollectionView)
 
-ScaledVisibleCellsCollectionView is UICollectionView extension. 
+ScaledVisibleCellsCollectionView is UICollectionView extension.
 ScaledVisibleCellsCollectionView is Check visible cells position. And setting cell's scale and alpha.
 
 ## Demo
@@ -22,16 +22,11 @@ ScaledVisibleCellsCollectionView is Check visible cells position. And setting ce
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 Add the following to your `Podfile`:
 
-* swift
 ```Ruby
 pod "ScaledVisibleCellsCollectionView"
 use_frameworks!
 ```
-* swift2.0
-```Ruby
-pod 'ScaledVisibleCellsCollectionView', :git => "https://github.com/ikemai/ScaledVisibleCellsCollectionView.git", :branch => "swift-2.0"
-use_frameworks!
-```
+
 Note: the `use_frameworks!` is required for pods made in Swift.
 
 ### Example
